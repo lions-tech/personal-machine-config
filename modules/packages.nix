@@ -11,7 +11,6 @@
       wget
       curl
       traceroute
-      gnomeExtensions.appindicator
       binutils
     ];
 
