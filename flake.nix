@@ -5,13 +5,12 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
   };
 
+  # TODO: auto-upgrade
   outputs = { self, nixpkgs }: {
     nixosConfigurations = {
       ThinkPad-X220 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [
-
-        ];
+        modules = (import ./modules "ThinkPad-X220");
       };
     };
   };
