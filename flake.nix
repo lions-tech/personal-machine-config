@@ -5,7 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
   };
 
-  # TODO: auto-upgrade
   # TODO: SSH keys
   outputs = { self, nixpkgs }: {
     nixosConfigurations = {
