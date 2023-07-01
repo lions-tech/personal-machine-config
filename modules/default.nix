@@ -5,6 +5,7 @@ hostName:
   ./packages.nix
   ./services.nix
   ./sound.nix
+  ./system.nix
   ./users.nix
 
   (./device-specific + ("/" + "${hostName}.nix"))

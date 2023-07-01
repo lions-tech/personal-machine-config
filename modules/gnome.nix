@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
   # let users decide, which applications they wish to install
   environment.gnome.excludePackages = with pkgs; [

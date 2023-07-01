@@ -38,6 +38,4 @@
       man-db.enable = true;
     };
   };
-
-  system.stateVersion = "23.05";
 }
