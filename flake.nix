@@ -6,6 +6,7 @@
   };
 
   # TODO: auto-upgrade
+  # TODO: SSH keys
   outputs = { self, nixpkgs }: {
     nixosConfigurations = {
       ThinkPad-X220 = nixpkgs.lib.nixosSystem {
