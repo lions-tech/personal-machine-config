@@ -1,5 +1,5 @@
 {
-  imports = [ ./hardware-ThinkPad-X220.nix ];
+  imports = [ ./hardware-configuration.nix ];
 
   boot.loader.grub = {
     enable = true;
@@ -9,6 +9,5 @@
 
   networking = {
     hostName = "ThinkPad-X220";
-    networkmanager.enable = true;
   };
 }

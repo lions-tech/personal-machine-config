@@ -13,4 +13,6 @@
   };
 
   security.sudo.execWheelOnly = true;
+
+  networking.networkmanager.enable = true;
 }

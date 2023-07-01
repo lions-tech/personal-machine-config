@@ -8,5 +8,5 @@ hostName:
   ./system.nix
   ./users.nix
 
-  (./device-specific + ("/" + "${hostName}.nix"))
+  (./device-specific + ("/" + "${hostName}"))
 ]
