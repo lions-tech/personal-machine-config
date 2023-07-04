@@ -6,7 +6,14 @@
     description = "leonard";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
-    createHome = true;
+    initialPassword = "SetYourOwnPw";
     openssh.authorizedKeys.keyFiles = [ ];
+  };
+
+  users.users.manuel = {
+    isNormalUser = true;
+    description = "manuel";
+    extraGroups = [ "networkmanager" "wheel" ];
+    initialPassword = "SetYourOwnPw";
   };
 }
