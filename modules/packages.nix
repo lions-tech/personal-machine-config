@@ -24,6 +24,7 @@
       curl
       traceroute
       binutils
+      git
     ];
 
     pathsToLink = [ "/share/zsh" ];
