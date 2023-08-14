@@ -25,7 +25,6 @@
     baobab # disk usage analyzer
     epiphany # web browser
     evince # document viewer
-    gnome-console
     gnome-text-editor
     gnome-tour
   ] ++ (with pkgs.gnome; [
