@@ -11,9 +11,15 @@
     grub = {
       enable = true;
       device = "nodev";
-      useOSProber = true;
       efiSupport = true;
       theme = pkgs.nixos-grub2-theme;
+      extraEntries = ''
+        menuentry "Windows 10" --class windows --class os {
+          insmod ntfs
+          search --no-floppy --set=root --fs-uuid CE47-0680
+          chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+        }
+      '';
     };
   };
 
