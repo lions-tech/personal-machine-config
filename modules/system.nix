@@ -24,4 +24,6 @@
   };
 
   networking.networkmanager.enable = true;
+
+  xdg.portal.enable = true;
 }
