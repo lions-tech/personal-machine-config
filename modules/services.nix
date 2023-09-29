@@ -27,6 +27,8 @@
       enable = true;
       nssmdns = true;
     };
+
+    power-profiles-daemon.enable = true;
   };
 
   hardware.printers = {
