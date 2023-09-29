@@ -18,6 +18,9 @@
     sudo.execWheelOnly = true;
     # allow wayland lockers to unlock the screen
     pam.services.gtklock.text = "auth include login";
+
+    # userland niceness
+    rtkit.enable = true;
   };
 
   networking.networkmanager.enable = true;
