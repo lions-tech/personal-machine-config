@@ -1,7 +1,9 @@
 ### personal-machine-config
+
 Configuration for different computers on my home network.
 
 ### Using this configuration for a fresh install
+
 1. Create bootable NixOS medium and boot from it
 2. Connect to a network
 3. Create the partitions as needed
