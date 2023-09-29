@@ -14,7 +14,11 @@
 
   console.font = "Lat2-Terminus16";
 
-  security.sudo.execWheelOnly = true;
+  security = {
+    sudo.execWheelOnly = true;
+    # allow wayland lockers to unlock the screen
+    pam.services.gtklock.text = "auth include login";
+  };
 
   networking.networkmanager.enable = true;
 }
