@@ -29,6 +29,9 @@
     };
 
     power-profiles-daemon.enable = true;
+
+    # battery info & stuff
+    upower.enable = true;
   };
 
   hardware.printers = {
