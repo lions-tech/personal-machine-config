@@ -1,7 +1,7 @@
 hostName:
 [
   ./german-locale.nix
-  ./gnome.nix
+  ./graphical.nix
   ./packages.nix
   ./services.nix
   ./sound.nix
