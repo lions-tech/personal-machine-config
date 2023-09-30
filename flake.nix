@@ -14,6 +14,10 @@
         modules = (import ./modules "ThinkPad-X220");
         specialArgs = { inherit hyprland; };
       };
+      MSI-PX60 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = (import ./modules "MSI-PX60");
+      };
     };
   };
 }
