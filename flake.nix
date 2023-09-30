@@ -8,16 +8,20 @@
 
   # TODO: SSH keys
   outputs = { self, nixpkgs, hyprland }: {
-    nixosConfigurations = {
-      ThinkPad-X220 = nixpkgs.lib.nixosSystem {
+    nixosConfigurations =
+      let
         system = "x86_64-linux";
-        modules = (import ./modules "ThinkPad-X220");
         specialArgs = { inherit hyprland; };
+      in
+      {
+        ThinkPad-X220 = nixpkgs.lib.nixosSystem {
+          inherit system specialArgs;
+          modules = (import ./modules "ThinkPad-X220");
+        };
+        MSI-PX60 = nixpkgs.lib.nixosSystem {
+          inherit system specialArgs;
+          modules = (import ./modules "MSI-PX60");
+        };
       };
-      MSI-PX60 = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = (import ./modules "MSI-PX60");
-      };
-    };
   };
 }
