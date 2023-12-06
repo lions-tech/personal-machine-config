@@ -34,6 +34,10 @@
 
   programs.zsh.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  # causes frequent recompilations
+  #virtualisation.virtualbox.host.enableExtensionPack = true;
+
   documentation = {
     dev.enable = true;
     man = {

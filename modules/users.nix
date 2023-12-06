@@ -4,7 +4,7 @@
   users.users.leonard = {
     isNormalUser = true;
     description = "leonard";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
     shell = pkgs.zsh;
     initialPassword = "SetYourOwnPw";
     openssh.authorizedKeys.keyFiles = [ ];

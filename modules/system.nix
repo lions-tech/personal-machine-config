@@ -45,7 +45,7 @@
       (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
     ];
 
-    enableDefaultFonts = false;
+    enableDefaultFonts = true;
 
     # user defined fonts
     # the reason there's Noto Color Emoji everywhere is to override DejaVu's
